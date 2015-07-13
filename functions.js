@@ -23,21 +23,28 @@
 // Q1
 // Write a function called `sum` that takes two
 // parameters and returns the sum of those 2 numbers.
-
+var sum = function(numOne, numTwo) {
+  return Number(numOne) + Number(numTwo);
+};
 
 
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
-
+var avg = function(numOne, numTwo, numThree){
+  var sum = Number(numOne) + Number(numTwo) + Number(numThree);
+  return sum/3;
+};
 
 
 
 // Q3
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
-
+var getLength = function(string){
+  return string.length;
+};
 
 
 
@@ -46,7 +53,13 @@
 // two parameters and returns `true` if the second
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
-
+var greaterThan = function(numOne, numTwo){
+  if(Number(numTwo)>Number(numOne)){
+    return true;
+  } else {
+    return false;
+  }
+};
 
 
 
@@ -55,7 +68,9 @@
 // single parameter and returns a string that
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
-
+var greet = function(name){
+  return "Hello, " + name + "!";
+};
 
 
 
@@ -69,7 +84,9 @@
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
-
+var madlib = function(wordOne, wordTwo, wordThree, wordFour){
+  return "This " +wordOne+ " sentence " +wordTwo+ " is " +wordThree+ " complete " +wordFour+ " nonsense."
+};
 
 
 
